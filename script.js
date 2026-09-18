@@ -1,0 +1,3 @@
+const categories=[["01","土地","場所・費用・災害・法規など"],["02","建物","間取り・構造・断熱・内装など"],["03","設備","キッチン・浴室・空調・換気など"],["04","電気・通信・防犯","電気・照明・Wi-Fi・防犯など"],["05","外構","駐車場・門・庭・収納など"]];
+const grid=document.getElementById("grid");
+grid.innerHTML=categories.map(([num,title,desc])=>`<a class="card" href="#" onclick="return false"><div><div class="num">${num}</div><h3>${title}</h3><p>${desc}</p></div><div class="arrow">→</div></a>`).join("");
